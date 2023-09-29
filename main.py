@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("ビンゴくん mk.1")
+st.title("ビンゴくん mk.1.1")
 "---"
 
 # 初期化
