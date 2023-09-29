@@ -7,8 +7,10 @@ st.title("ビンゴくん mk.1.1")
 if "entered" not in st.session_state:
     st.session_state.entered = []
 
+size = st.toggle("bigger")
+
 entry_number =  st.number_input("No.",1,240,)
-st.image(f"source/{entry_number}.png",use_column_width=True)
+st.image(f"source/{entry_number}.png",use_column_width=size)
 
 if st.button("entry"):
     if not entry_number in st.session_state.entered:
