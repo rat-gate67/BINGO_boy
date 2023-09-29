@@ -8,7 +8,7 @@ if "entered" not in st.session_state:
     st.session_state.entered = []
 
 entry_number =  st.number_input("No.",1,240,)
-st.image(f"source/{entry_number}.png",)
+st.image(f"source/{entry_number}.png",use_column_width=True)
 
 if st.button("entry"):
     if not entry_number in st.session_state.entered:
